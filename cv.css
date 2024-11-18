@@ -1,0 +1,48 @@
+/* Set up A4 size */
+@media screen, print {
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+  
+    /* A4 paper size */
+    .page {
+      width: 210mm; /* A4 width */
+      height: 297mm; /* A4 height */
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+  
+    /* Adjust box styling within A4 layout */
+    .box {
+      display: flex;
+      gap: 5px;
+      flex: 1;
+      flex-wrap: nowrap;
+    }
+  
+    .box1 {
+      background-color: rgb(8, 131, 66);
+      width: 35%; /* Adjust width to fit */
+      padding: 20px;
+    }
+  
+    .box2 {
+      background-color: rgb(255, 255, 255);
+      width: 65%; /* Adjust width to fit */
+      padding: 20px;
+    }
+  
+    img {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+    }
+  }
+  
